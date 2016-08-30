@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>chill</title>
+  </head>
+
+
+  <body>
+    <script id='userTemplate' type='text/template'>
+      <ul>
+          <%= username %>: <%= message %>
+        <!-- <li>
+          Add date at future time
+        </li> -->
+      </ul>
+    </script>
+
+    <script id='videoTemplate' type='text/template'>
+      <input type='video' controls>
+    </script>
+
+
+    <link rel='stylesheet' href='./styles.css'></script>
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/underscore/underscore.js"></script>
+    <script src="./bower_components/backbone/backbone.js"></script>
+    <script src="user.js"></script>
+    <script src="chat.js"></script>
+    <script src="userView.js"></script>
+    <script src="chatView.js"></script>
+    <script src="app.js"></script>
+    
+    <h1>_&chill</h1>
+
+    <!-- Chat -->
+    <div id='users'>
+      <form id='addUser' action='#'>
+        <div>
+          <h4>Username</h4>
+            <input id='username' type='text'>
+          <h4>Message</h4>
+            <input id='message' type='text'>
+            <button id='add'>Add</button>
+        </div>
+      </form>
+    
+      <h3>Messages</h3>
+    </div>
+
+    <!-- Video -->
+    <div id='video'>
+      <form id='addUser' action='#'>
+        <div>
+          <h4>Search for a channel</h4>
+            <input id='channel' type='text'>
+            <button id='search'>Search</button>
+        </div>
+      </form>
+      <video class='video' controls>
+    </div>
+
+  </body>
+</html>
