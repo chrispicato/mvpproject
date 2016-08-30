@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var mongo = require('mongodb');
 
-mongoose.connect('mongodb://localhost:users');
+mongoose.connect('mongodb://localhost/test');
 
 var db = mongoose.connection;
 

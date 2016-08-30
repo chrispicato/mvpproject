@@ -11,7 +11,7 @@ module.exports.Chill = Backbone.View.extend({
   },
 
   submitToServer: function () {
-    consoel.log('submitted');
+    console.log('submitted');
     e.preventDefault();
     var $username = this.$el.find('form .username');
     var $message = this.$el.find('form .message');
