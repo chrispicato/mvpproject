@@ -1,31 +1,11 @@
-<form id='target'>
+<!-- <form id='target'>
   <h4>Username</h4>
   <input id='username' type='text'>
   <h4>Message</h4>
   <input id='message' type='text'>
   <input type='submit' id='submit' value='Message'>
-
-  <script>
-    $('#target').submit(function (e) {
-      console.log('got here');
-      e.preventDefault();
-      var username = e.currentTarget[0].value;
-      // var $username = $('#username').value;
-      console.log(username);
-      var message = e.currentTarget[1].value;
-      console.log(message);
-      // var $message = this.$el.find('form #message');
-      var $User = new Chill.User({
-        username: $username,
-        message: $message
-      });
-      // console.log($username);
-      // console.log($message);
-      $message.val('');
-    });
-  </script>
 </form>
 
 <ul class='chatroom'>
   <li>{{ chat }}</li>
-</ul>
+</ul> -->

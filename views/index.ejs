@@ -6,24 +6,25 @@
 
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/underscore/underscore.js"></script>
-    <script src="/bower_components/backbone/backbone.js"></script> 
+    <script src="/bower_components/backbone/backbone.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+
   </head>
 
   <body>
-    <!-- TODO: update navbar -->
     <% include nav %>
 
     <h1>_&chill</h1>
 
+    <% include /partials/backbone_templates %>
+
     <% include video %>
 
-    <script>
-      $(document).ready(function () {
-      });
-    </script>
-
-    <!-- TODO: create model -->
     <% include chat %>
 
   </body>
 </html>
+
+
+<script src='app.js'></script>
+<script src='chat.js'></script>

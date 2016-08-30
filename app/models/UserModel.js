@@ -14,5 +14,6 @@ var Chris = new User({
 });
 
 Chris.save();
+console.log(Chris);
 
 module.exports = User;

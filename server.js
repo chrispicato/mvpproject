@@ -3,6 +3,7 @@ var path = require('path');
 var partials = require('express-partials');
 var db = require('./app/config');
 var User = require('./app/models/UserModel');
+var Handlebars = require('handlebars');
 
 var app = express();
 
