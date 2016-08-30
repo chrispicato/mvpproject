@@ -16,9 +16,21 @@
       </ul>
     </script>
 
-    <script id='videoTemplate' type='text/template'>
-      <input type='video' controls>
-    </script>
+    <!-- <script id='videoTemplate' type='text/template'>
+      <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+        <div class='video' id={{channel}}></div>
+        <script type="text/javascript">
+          var options = {
+              width: 854,
+              height: 480,
+              channel: "{{channel}}", 
+              //video: "{VIDEO_ID}"       
+          };
+          var player = new Twitch.Player("{{channel}}", options);
+          player.setVolume(0.5);
+          player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+      </script>
+    </script> -->
 
 
     <link rel='stylesheet' href='./styles.css'></script>
@@ -50,14 +62,28 @@
 
     <!-- Video -->
     <div id='video'>
-      <form id='addUser' action='#'>
+      <form id='addVideo' action='#'>
         <div>
           <h4>Search for a channel</h4>
             <input id='channel' type='text'>
             <button id='search'>Search</button>
         </div>
       </form>
-      <video class='video' controls>
+
+      <!-- Video will go here -->
+      <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+        <div class='video' id="{imaqtpie}"></div>
+        <script type="text/javascript">
+          var options = {
+              width: 854,
+              height: 480,
+              channel: "{imaqtpie}", 
+              //video: "{VIDEO_ID}"       
+          };
+          var player = new Twitch.Player("{imaqtpie}", options);
+          player.setVolume(0.5);
+          player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
+      </script>
     </div>
 
   </body>

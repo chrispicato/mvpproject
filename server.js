@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var partials = require('express-partials');
+var request = require('request');
 var mongoose = require('mongoose');
 
 var app = express();
@@ -95,6 +96,8 @@ app.delete('/api/users/:id', function (req, res) {
     })
   });
 });
+
+
 
 var port = 8000;
 app.listen(port, function () {
