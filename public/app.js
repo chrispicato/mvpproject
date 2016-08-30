@@ -1,15 +1,7 @@
 var app = app || {};
 
 $(function () {
-  var users = [
-  {username: 'Chris', message: 'Hello'},
-  {username: 'Connor', message: 'I suck'},
-  {username: 'Danny', message: 'Hola'},
-  {username: 'Bryan', message: 'Konichiwa'},
-  {username: 'Andrew', message: 'Suck it'},
-  ];
-
-  new app.ChatView(users);
+  new app.ChatView();
 });
 
 // window.Chat = Backbone.View.extend({

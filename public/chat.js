@@ -1,5 +1,6 @@
 var app = app || {};
 
 app.Chat = Backbone.Collection.extend({
-  model: app.User
+  model: app.User,
+  url: '/api/users'
 });
