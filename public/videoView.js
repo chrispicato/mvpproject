@@ -1,23 +1,12 @@
 var app = app || {};
 
 app.VideoView = Backbone.View.extend({
-  el: '#video',
-
-  events: {
-
-  },
-
+  tagName: 'div',
+  className: 'videoContainer',
   template: _.template($('#videoTemplate').html()),
 
   render: function () {
-    this.$el.html(this.template(app.Searches[app.Searches.length - 1]));
+    this.$el.html(this.template(this.model.attributes));
     return this;
-  },
-
-  initialize: function () {
-    this.collection = new app.Searches();
-    this.render();
-
-    this.listenTo(this.collection, '')
-  },
+  }
 });

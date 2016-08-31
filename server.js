@@ -97,8 +97,6 @@ app.delete('/api/users/:id', function (req, res) {
   });
 });
 
-
-
 var port = 8000;
 app.listen(port, function () {
   console.log('app is listening on',port, app.settings.env);

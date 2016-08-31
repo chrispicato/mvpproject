@@ -16,6 +16,15 @@
       </ul>
     </script>
 
+    <script id='videoTemplate' type='text/template'>
+      <ul>
+          <video src=<%= videos %>>
+        <!-- <li>
+          Add date at future time
+        </li> -->
+      </ul>
+    </script>
+
     <!-- <script id='videoTemplate' type='text/template'>
       <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
         <div class='video' id={{channel}}></div>
@@ -41,6 +50,10 @@
     <script src="chat.js"></script>
     <script src="userView.js"></script>
     <script src="chatView.js"></script>
+    <script src="search.js"></script>
+    <script src="searches.js"></script>
+    <script src="videoView.js"></script>
+    <script src="videoListView.js"></script>
     <script src="app.js"></script>
     
     <h1>_&chill</h1>
@@ -61,7 +74,7 @@
     </div>
 
     <!-- Video -->
-    <div id='video'>
+    <div id='videos'>
       <form id='addVideo' action='#'>
         <div>
           <h4>Search for a channel</h4>
@@ -69,18 +82,19 @@
             <button id='search'>Search</button>
         </div>
       </form>
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/LEgAalGlgNA?autoplay" frameborder="0" allowfullscreen></iframe>
 
       <!-- Video will go here -->
       <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
-        <div class='video' id="{imaqtpie}"></div>
+        <div class='video' id="{tsm_doublelift}"></div>
         <script type="text/javascript">
           var options = {
-              width: 854,
+              width: 500,
               height: 480,
-              channel: "{imaqtpie}", 
+              channel: "{tsm_doublelift}", 
               //video: "{VIDEO_ID}"       
           };
-          var player = new Twitch.Player("{imaqtpie}", options);
+          var player = new Twitch.Player("{tsm_doublelift}", options);
           player.setVolume(0.5);
           player.addEventListener(Twitch.Player.PAUSE, () => { console.log('Player is paused!'); });
       </script>
